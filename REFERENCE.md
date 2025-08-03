@@ -90,6 +90,7 @@ The following parameters are available in the `unbound` class:
 * [`define_tag`](#-unbound--define_tag)
 * [`do_ip4`](#-unbound--do_ip4)
 * [`do_ip6`](#-unbound--do_ip6)
+* [`prefer_ip4`](#-unbound--prefer_ip4)
 * [`prefer_ip6`](#-unbound--prefer_ip6)
 * [`do_udp`](#-unbound--do_udp)
 * [`do_tcp`](#-unbound--do_tcp)
@@ -599,6 +600,14 @@ Data type: `Boolean`
 see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
 
 Default value: `true`
+
+##### <a name="-unbound--prefer_ip4"></a>`prefer_ip4`
+
+Data type: `Boolean`
+
+see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
+
+Default value: `false`
 
 ##### <a name="-unbound--prefer_ip6"></a>`prefer_ip6`
 

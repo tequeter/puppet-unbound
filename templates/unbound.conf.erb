@@ -76,6 +76,7 @@ server:
 <%- end -%>
 <%= print_config('do-ip4', @do_ip4) -%>
 <%= print_config('do-ip6', @do_ip6) -%>
+<%= print_config('prefer-ip4', @prefer_ip4, '1.11.0') -%>
 <%= print_config('prefer-ip6', @prefer_ip6) -%>
 <%= print_config('do-udp', @do_udp) -%>
 <%= print_config('do-tcp', @do_tcp) -%>

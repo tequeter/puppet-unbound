@@ -44,6 +44,7 @@
 # @param define_tag see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
 # @param do_ip4 see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
 # @param do_ip6 see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
+# @param prefer_ip4 see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
 # @param prefer_ip6 see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
 # @param do_udp see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
 # @param do_tcp see https://nlnetlabs.nl/documentation/unbound/unbound.conf/
@@ -254,6 +255,7 @@ class unbound (
   Array[String[1]]                              $define_tag                      = [],     # version 1.5.10
   Boolean                                       $do_ip4                          = true,
   Boolean                                       $do_ip6                          = true,
+  Boolean                                       $prefer_ip4                      = false,  # version 1.11.0
   Boolean                                       $prefer_ip6                      = false,  # version 1.5.10
   Boolean                                       $do_udp                          = true,
   Boolean                                       $do_tcp                          = true,
